@@ -57,29 +57,29 @@ owl.owlCarousel({
 // $(".stop").on("click", function () {
 //   owl.trigger("stop.owl.autoplay");
 // });
-// let started = false; // لضمان العد مرة واحدة فقط
+let started = false; // لضمان العد مرة واحدة فقط
 
-// window.addEventListener("scroll", function () {
-//   const counters = document.querySelectorAll(".counter");
-//   const section = document.querySelector(".stats"); // القسم الذي يحتوي العدادات
+window.addEventListener("scroll", function () {
+  const counters = document.querySelectorAll(".counter");
+  const section = document.querySelector(".stats"); // القسم الذي يحتوي العدادات
 
-//   if (window.scrollY && !started) {
-//     started = true;
+  if (window.scrollY && !started) {
+    started = true;
 
-//     counters.forEach(counter => {
-//       let count = 0;
-//       const target = +counter.dataset.target;
+    counters.forEach(counter => {
+      let count = 0;
+      const target = +counter.dataset.target;
 
-//       const step = Math.ceil(target / 1000); // خطوة العد
-//       const interval = setInterval(() => {
-//         count += step;
-//         if (count >= target) {
-//           count = target;
-//           clearInterval(interval);
-//         }
-//         counter.textContent = count;
-//       }, 10);
-//     });
-//   }
-// });
+      const step = Math.ceil(target / 150); // خطوة العد
+      const interval = setInterval(() => {
+        count += step;
+        if (count >= target) {
+          count = target;
+          clearInterval(interval);
+        }
+        counter.textContent = count;
+      }, 10);
+    });
+  }
+});
 

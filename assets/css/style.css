@@ -4,7 +4,6 @@
   --third-color: #404040;
   --fourth-color: #808080;
   --fifth-color: rgb(192, 192, 192);
-  --six-color: #17b99e;
   --background-color: rgba(192, 192, 192, 0.4);
   --background-color-filter: rgba(192, 192, 192, 0.4) !important;
   --placeholder-color: #a1a1a1;
@@ -66,6 +65,12 @@ h6 {
   font-size: 1.5rem;
 }
 
+.text-main{
+  color: var(--third-color);
+}
+.text-second{
+  color: var(--fourth-color);
+}
 .btn-neo {
   background-color: var(--third-color) !important;
   transition: all 0.3s ease-in;
@@ -84,6 +89,9 @@ h6 {
   background-color: var(--background-color-filter);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+.bg-section {
+  background-color: var(--background-color);
 }
 /*  
 ##################################################
@@ -126,11 +134,12 @@ h6 {
   background-size: contain;
   background-position: center;
 }
+
 .navbar {
   width: 100%;
   z-index: 1;
 }
-.navbar .navbar-brand img{
+.navbar .navbar-brand img {
   filter: brightness(0);
 }
 .nav-item {
@@ -165,7 +174,7 @@ h6 {
 }
 .hero-slider .text-slider h1 {
   font-size: 4rem;
-  color: var(--third-color) !important;
+  color: var(--second-color);
   font-weight: bold !important;
 }
 
@@ -218,7 +227,7 @@ h6 {
   transition: all 0.5s;
 }
 .hero-slider .hero-slider-content h1 {
-  color: var(--third-color);
+  color: var(--second-color);
   margin-bottom: 0;
   text-transform: uppercase;
   font-size: 4rem;
@@ -335,6 +344,12 @@ h6 {
 #                  About Us                      #
 ##################################################
 */
+.home-about {
+  background-image: url("../images/BRANDING.pdf-image-012.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .bg-img {
   top: 35%;
   left: 40%;
@@ -343,18 +358,53 @@ h6 {
   width: 100% !important;
   height: 100% !important;
   transform: translate(-50%, -50%) !important;
-
 }
-.bg-img img{
-  
+.bg-img img {
   height: 350px;
 }
-.bg-img-two {
-  top: 43%;
-  left: 55%;
-  inset-inline-end: 45%;
-  width: 90%;
-  height: 100%;
-  transform: translate(-50%, -50%);
 
+.bg-img-two {
+  top: 35%;
+  left: 80%;
+  inset-inline-end: 45%;
+  width: 100% !important;
+  height: 100% !important;
+  transform: translate(-50%, -50%);
+}
+.bg-img-two img {
+  height: 350px;
+  transform: rotate(180deg);
+}
+
+/*  
+##################################################
+#                  Footer                        #
+##################################################
+*/
+footer .list-links-site li {
+  transition: all 0.3s;
+  cursor: pointer;
+  width: fit-content;
+}
+footer .list-links-site li i {
+  font-size: 15px;
+}
+footer .list-links-site li:hover {
+  color: var(--third-color);
+  transform: translateX(10px);
+}
+
+footer .widget-contact i {
+  background-image: url("../images/wooden-natural-floor-decoration-concept.jpg"); /* نفس الصورة */
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+footer .widget-contact a {
+  transition: all 0.5s ease-in-out;
+}
+footer .widget-contact a :hover {
+  color: var(--third-color);
 }
