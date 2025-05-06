@@ -11,7 +11,8 @@
 }
 @media (max-width: 576px) {
   .hero-slider .item {
-    height: calc(100vh - 78px);
+    height: 60vh;
+    object-fit: cover;
   }
 }
 @media (max-width: 992px) {

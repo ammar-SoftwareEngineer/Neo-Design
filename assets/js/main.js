@@ -15,8 +15,8 @@ owl.owlCarousel({
   responsive: {
     0: {
       items: 1,
-      stagePadding: 20,
-      margin: 10,
+      stagePadding: 70,
+      margin: 50,
     },
     576: {
       items: 1,
