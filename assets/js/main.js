@@ -70,14 +70,14 @@ window.addEventListener("scroll", function () {
       let count = 0;
       const target = +counter.dataset.target;
 
-      const step = Math.ceil(target / 150); // خطوة العد
+      const step = Math.ceil(target / 300); // خطوة العد
       const interval = setInterval(() => {
         count += step;
         if (count >= target) {
           count = target;
           clearInterval(interval);
         }
-        counter.textContent = count;
+        counter.textContent = `+ ${count}`;
       }, 10);
     });
   }

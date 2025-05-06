@@ -168,7 +168,7 @@ h6 {
 .hero-slider .text-slider {
   position: absolute !important;
   top: 50% !important;
-  left: 50% !important;
+  inset-inline-start: 50% !important;
   z-index: 2 !important;
   transform: translate(-50%, -50%) !important;
 }
@@ -378,7 +378,8 @@ h6 {
 
 /*  
 ##################################################
-#                  Footer                        #
+#                  Footer   
+                     #
 ##################################################
 */
 footer .list-links-site li {
