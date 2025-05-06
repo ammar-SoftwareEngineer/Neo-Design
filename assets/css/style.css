@@ -382,34 +382,18 @@ h6 {
 
 /*  
 ##################################################
-#                  Footer   
-                     #
+#                  Footer                        #
 ##################################################
 */
-footer .list-links-site li {
-  transition: all 0.3s;
-  cursor: pointer;
-  width: fit-content;
+footer .social a{
+  transition: all 0.4s ease-in-out;
 }
-footer .list-links-site li i {
-  font-size: 15px;
+footer .social a:hover{
+  color: var(--second-color);
 }
-footer .list-links-site li:hover {
-  color: var(--third-color);
-  transform: translateX(10px);
+footer .links li a {
+  transition: all 0.4s ease-in-out;
 }
-
-footer .widget-contact i {
-  background-image: url("../images/wooden-natural-floor-decoration-concept.jpg"); /* نفس الصورة */
-  background-size: cover;
-  background-position: center;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-footer .widget-contact a {
-  transition: all 0.5s ease-in-out;
-}
-footer .widget-contact a :hover {
-  color: var(--third-color);
+footer .links li a:hover {
+  color: var(--second-color);
 }
