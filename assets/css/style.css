@@ -44,6 +44,18 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* ::-webkit-scrollbar-track {
+  background: transparent;
+} */
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 4px;
+}
 h1,
 h2,
 h3,
@@ -65,10 +77,10 @@ h6 {
   font-size: 1.5rem;
 }
 
-.text-main{
+.text-main {
   color: var(--third-color);
 }
-.text-second{
+.text-second {
   color: var(--fourth-color);
 }
 .btn-neo {
