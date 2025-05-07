@@ -64,6 +64,12 @@ h5,
 h6 {
   font-family: "JosefinSans", sans-serif !important;
 }
+.font-neo-josef{
+  font-family: "JosefinSans", sans-serif !important;
+}
+.font-neo-adobe{
+  font-family: "Adobe", sans-serif !important;
+}
 .text-xl {
   font-size: 8rem;
 }
@@ -379,7 +385,9 @@ h6 {
   height: 350px;
   transform: rotate(180deg);
 }
-
+.count{
+  /* width: 400px; */
+}
 /*  
 ##################################################
 #                  Footer                        #
