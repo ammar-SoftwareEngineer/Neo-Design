@@ -64,10 +64,10 @@ h5,
 h6 {
   font-family: "JosefinSans", sans-serif !important;
 }
-.font-neo-josef{
+.font-neo-josef {
   font-family: "JosefinSans", sans-serif !important;
 }
-.font-neo-adobe{
+.font-neo-adobe {
   font-family: "Adobe", sans-serif !important;
 }
 .text-xl {
@@ -178,50 +178,7 @@ h6 {
   justify-content: center;
   align-items: center;
 }
-.hero-slider-pages {
-  width: 100%;
-  height: 100%;
-}
 
-.hero-slider .text-slider {
-  position: absolute !important;
-  top: 50% !important;
-  inset-inline-start: 50% !important;
-  z-index: 2 !important;
-  transform: translate(-50%, -50%) !important;
-}
-.hero-slider .text-slider h1 {
-  font-size: 4rem;
-  color: var(--second-color);
-  font-weight: bold !important;
-}
-
-/* صورة السلايدر */
-/* جميع الصور بالحجم الصغير بشكل افتراضي */
-.owl-carousel .owl-item img {
-  transition: transform 0.5s ease;
-  transform: scale(0.7);
-  opacity: 0.7;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-/* تكبير الصورة التي في المنتصف */
-.owl-carousel .owl-item.center img {
-  transform: scale(1.3);
-  opacity: 1;
-  z-index: 2;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* .owl-carousel .owl-item.center .text-item {
-  opacity: 1;
-  transform: translateX(-50%) translateY(-100%);
-
-  text-align: start !important;
-  color: var(--second-color);
-} */
 
 .hero-slider .overlay {
   position: absolute;
@@ -241,112 +198,18 @@ h6 {
   z-index: 2;
   color: white;
   margin: 0px 120px;
-
+z-index: 4;
   transition: all 0.5s;
 }
-.hero-slider .hero-slider-content h1 {
-  color: var(--second-color);
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font-size: 4rem;
-}
+.hero-slider .text-slider h1 {
 
-.hero-slider .hero-slider-content .btn-about {
-  background-color: var(--main-color);
-  color: var(--third-color);
-  padding: 0.5rem 2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  font-size: 20px;
-}
-.hero-slider .hero-slider-content .btn-about:hover {
-  background-color: var(--fourth-color);
-}
+  color: white;
 
+}
 
 .hero {
   transition: all 0.3s;
   position: relative;
-}
-
-.hero .owl-nav {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  padding: 0 20px;
-  justify-content: space-between;
-  align-items: center;
-  /* margin: 0 auto; */
-  z-index: 99;
-}
-.hero:hover .owl-nav {
-  transition: all 0.3s;
-}
-.hero .owl-nav .owl-prev {
-  color: var(--second-color) !important;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  transition: all 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.hero:hover .owl-nav .owl-prev {
-  transition: all 0.3s;
-}
-.hero .owl-nav .owl-prev:hover {
-  background-color: var(--background-color-filter);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(10px);
-  color: var(--second-color) !important;
-  transform: scale(1.1);
-}
-.hero .owl-nav .owl-next {
-  color: var(--second-color) !important;
-
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  transition: all 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.hero:hover .owl-nav .owl-next {
-  transition: all 0.3s;
-}
-.hero .owl-nav .owl-next:hover {
-  background-color: var(--background-color-filter);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(10px);
-  color: var(--second-color) !important;
-  transform: scale(1.1);
-}
-.hero .owl-nav .owl-prev > span,
-.hero .owl-nav .owl-next > span {
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--second-color);
-}
-.hero .owl-nav .owl-prev:hover:hover > span,
-.hero .owl-nav .owl-next:hover > span {
-  font-size: 40px;
-
-  color: var(--main-color) !important;
-}
-.hero .owl-nav .owl-prev > span {
-  margin: 0 auto;
-}
-
-.hero .owl-nav .owl-next > span {
-  margin-left: 0px;
 }
 
 /*  
@@ -385,18 +248,22 @@ h6 {
   height: 350px;
   transform: rotate(180deg);
 }
-.count{
-  /* width: 400px; */
+.count {
+transition: all 0.3s ease;
+cursor: pointer;
+}
+.count:hover{
+border: 2px solid black !important;
 }
 /*  
 ##################################################
 #                  Footer                        #
 ##################################################
 */
-footer .social a{
+footer .social a {
   transition: all 0.4s ease-in-out;
 }
-footer .social a:hover{
+footer .social a:hover {
   color: var(--second-color);
 }
 footer .links li a {
